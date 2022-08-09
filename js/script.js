@@ -96,7 +96,7 @@ if( number === +guess) {
 //==============================================================================================
 
 //if function
-
+/*
 const Java =prompt("What is the programming lang used in backend development");
 const Css = prompt("What is the programming lang used to style the web page");
 const Ronaldo = prompt("Who is the best player in the world");
@@ -125,4 +125,36 @@ document.querySelector(`main`).innerHTML = message;
 
  */
 //============================================================================================================
+//Math Function
+/*
+
+// const roll = Math.floor(Math.random()*6) +1;
+// console.log(`You rolled a ${roll}.`)
+ const userNu =prompt(`please enter a number`);
+
+ if(+userNu){
+     const roll =Math.floor((Math.random()* +userNu)+1);
+
+     console.log(`The number between 1 and ${userNu} is ${roll}.`);
+
+ }else {
+     console.log(`You need to provide a number, Try again`)
+ }
+
+ */
+
+//==================================================================================
+
+
+
+const user1Nu =prompt(`please enter a small number`);
+const user2Nu =prompt(`please enter a higher number`);
+if(+user1Nu && +user2Nu){
+    const roll =Math.floor((Math.random()* (+user2Nu - +user1Nu+1)) + +user1Nu);
+
+    console.log(`The random number between ${user1Nu} and ${user2Nu} is ${roll}.`);
+
+}else {
+    console.log(`You need to provide a number, Try again`);
+    }
 
