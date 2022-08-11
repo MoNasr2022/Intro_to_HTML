@@ -145,8 +145,8 @@ document.querySelector(`main`).innerHTML = message;
 
 //==================================================================================
 
-
-
+// String to int
+/*
 const user1Nu =prompt(`please enter a small number`);
 const user2Nu =prompt(`please enter a higher number`);
 if(+user1Nu && +user2Nu){
@@ -157,4 +157,143 @@ if(+user1Nu && +user2Nu){
 }else {
     console.log(`You need to provide a number, Try again`);
     }
+
+
+ */
+//----------------------------------------------------------------------------
+
+//JavaScript Function
+/*
+function alertRandom(){
+    const randomNumber =Math.floor(Math.random()*6 + 1);
+    alert(randomNumber);
+
+}
+alertRandom();
+alertRandom();
+alertRandom();
+
+
+ */
+//----------------------------------------------------
+/*
+function getRandom() {
+    const randomNumber = Math.floor(Math.random() * 6 + 1);
+    return(randomNumber);
+}
+alert(getRandom());
+
+
+ */
+//----------------------------------------------------------
+/*
+function isFieldEmpty(){
+const field = document.querySelector(`#info`);
+if (field.value===''){  // ==(!field.value)
+    return true;
+
+}else {
+    return false
+}
+}
+const fieldTest = isFieldEmpty();
+if (fieldTest === true){  // == (fieldTest)
+    alert(`please enter your info`);
+}
+
+ */
+//----------------------------
+/*
+function alertRandom(upper){
+    const randomNumber = Math.floor(Math.random() * upper + 1);
+    return randomNumber;
+
+}
+console.log( alertRandom(6));
+console.log( alertRandom(100));
+console.log( alertRandom(1000));
+
+ */
+//---------------------------------
+// Multiple agreements
+/*
+function getArea(length,width,unit){
+    const area = length*width;
+    return `${area} ${unit}`;
+
+}
+getArea(10,20);
+
+ */
+//--------------------------------------
+
+  // Arrow Functions
+/*
+const getRandomNumber = (upper) => {
+    const randomNumber =Math.floor(Math.random() * upper) +1;
+    return randomNumber;
+};
+
+const getArea = (length,width,unit) =>{
+    const area = length*width;
+    return `${area} ${unit}`;
+
+};
+let square = x =>  x * x ;
+const add = (x , y) => x*y ;
+
+const name = prompt(`Please enter your name`);
+const greeting = () => alert(`Greetings, ${name}!`);
+greeting();
+
+
+function greeting2() {alert(`Greetings, ${name}!`);
+return greeting()
+}
+greeting2();
+
+ */
+/*
+function sayGreeting(greeting = 'Good Morning',name = 'student'){
+    return`${greeting} ${name}`;
+
+}
+const getArea = (length,width,unit='sq ft') => {
+    const area = length * width;
+    return `${area} ${unit}`;
+}
+
+ */
+
+ //
+ // /**
+ // * Calculates and returns the area of a rectangle.
+ // *
+ // * @param {number} width - The width of the rectangle.
+ // * @param {number} length - The length of the rectangle.
+ // * @param {string} unit - The unit of measurement.
+ // * @returns {string} The area of the rectangle and unit of measure.
+ // */
+
+//---------------------------------------
+/**
+ * getting a random number between two number.
+ *
+ * @param {number} lower the smaller number.
+ * @param {number} upper  the higher number.
+ * @returns {number} random number between lower and upper.
+ */
+
+
+
+
+function getRandomNumber(lower,upper) {
+
+    const random = Math.floor(Math.random() * (upper - lower + 1) + lower);
+    document.querySelector('main').innerHTML = `<h2>The random number between ${lower} and ${upper} is ${random}</h2>`
+    return random;
+
+}
+
+
 
