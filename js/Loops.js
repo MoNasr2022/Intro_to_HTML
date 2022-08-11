@@ -67,14 +67,27 @@ alert(message)
  */
 //=----------------------------
 
-const tMinus = 10;
-let message = 'Liftoff! 🚀';
+// const tMinus = 10;
+// let message = 'Liftoff! 🚀';
+//
+// for ( let i = tMinus; i >= 1; i-- ) {
+//     let status = prompt(`T-Minus ${i}... Continue? (Y/N)`);
+//     if ( status === null || status.toLowerCase() === 'n' ) {
+//         message = 'Abort launch!';
+//         break;
+//     }
+// }
+// alert(message);
+ //=======================================
+let message = "supercalifragilisticexpialidocious";
+message = message.length;
 
-for ( let i = tMinus; i >= 1; i-- ) {
-    let status = prompt(`T-Minus ${i}... Continue? (Y/N)`);
-    if ( status === null || status.toLowerCase() === 'n' ) {
-        message = 'Abort launch!';
-        break;
+for ( let i = 1; i < message; i++ ) {
+    if ( i === message / 2 ) {
+        console.log('The loop has terminated...');
+        break
     }
+    console.log(`Logging the number ${i}`);
 }
-alert(message);
+
+console.log('The program continues...');
