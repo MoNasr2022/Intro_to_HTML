@@ -288,12 +288,17 @@ const getArea = (length,width,unit='sq ft') => {
 
 
 function getRandomNumber(lower,upper) {
+    if (isNaN(lower) || isNaN(upper)){
+        throw Error('Both parameters must be numbers' )
+    }
 
     const random = Math.floor(Math.random() * (upper - lower + 1) + lower);
     document.querySelector('main').innerHTML = `<h2>The random number between ${lower} and ${upper} is ${random}</h2>`
+
     return random;
 
 }
+console.log(getRandomNumber(10,20));
 
 
 
