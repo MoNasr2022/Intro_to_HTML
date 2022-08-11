@@ -276,6 +276,7 @@ const getArea = (length,width,unit='sq ft') => {
  // */
 
 //---------------------------------------
+
 /**
  * getting a random number between two number.
  *
@@ -286,7 +287,7 @@ const getArea = (length,width,unit='sq ft') => {
 
 
 
-
+/*
 function getRandomNumber(lower,upper) {
     if (isNaN(lower) || isNaN(upper)){
         throw Error('Both parameters must be numbers' )
@@ -299,6 +300,8 @@ function getRandomNumber(lower,upper) {
 
 }
 console.log(getRandomNumber(10,20));
+ */
+//=============================================================================================
 
 
 
