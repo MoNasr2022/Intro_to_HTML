@@ -303,5 +303,30 @@ console.log(getRandomNumber(10,20));
  */
 //=============================================================================================
 
+function getRandomNumber(x){
+    return Math.floor(Math.random()*x +1);
+}
+
+const randomNumber = getRandomNumber(10);
+let attempts = 0;
+let guess
+
+    do {
+        guess = prompt(`Please guess a number between 1 and 10`);
+        attempts++
+        if (+guess === randomNumber){
+           alert(`it takes you ${attempts} tries to guess the number ${randomNumber}` )
+            break
+       }else (alert(`You did not guess the right number, It was ${randomNumber}`))
+
+    }while ( attempts <10)
+
+alert(`You guessed the right number after ${attempts} attempts, It was ${guess}`)
+
+
+
+
+
+
 
 
