@@ -38,16 +38,19 @@ let counter = 0;
 // }while(secret !=='sesame' )
 // alert("You know the secret password. Welcome!");
 //=====================================================================================
+
    // for loops
 
-const main =document.querySelector('main')
-let html= '';
-
-
-for (let i = 1; i <= 10; i++){
-    html+= `<div>${i}</div>`
+const getRandomColor = () => Math.floor(Math.random() * 256);
+function randomRGB(){
+    const color =`rgb(${getRandomColor()},${getRandomColor()}, ${getRandomColor()})`
+    return color
 }
-main.innerHTML =html;
+let html= '';
+for (let i = 1; i <= 10; i++) {
+    html += `<div style="background-color: ${randomRGB()}">${i}</div>`
+}
+document.querySelector('main').innerHTML = html
 
 
 //------------------------------------------
