@@ -1,43 +1,52 @@
-// const person ={
-//     name: 'Edward',
-//     city: 'New York',
-//     age: 27,
-//     isStudent: true,
-//     skills: ['JavaScript','HTML','CSS']
-//  };
+
+/*const person ={
+    name: 'Edward',
+    city: 'New York',
+    age: 27,
+    isStudent: true,
+    skills: ['JavaScript','HTML','CSS']
+ };
+for (const prop in person) {
+    console.log(prop)
 //
-// const message = `Hi, I am ${person.name}.`
-// const city = `${message} I live in ${person.city}`
-// // console.log(message)
-// // console.log(city)
-//
-// person.nickName = 'duke';
-//
-// // for (let prop in person){
-// //     console.log(`${prop}: ${person[prop]}`)}
-//
-// const prop = Object.keys(person)
-// console.log(prop)
-// const value = Object.values(person)
-// console.log(`${prop}: ${value}`)
-// //---------------------------------------------------------------
-// const name = {
-//     firstName: 'Reggie',
-//     lastName: 'Williams',
-// };
-//
-// const role = {
-//     title: 'Software developer',
-//     skills: ['JavaScript', 'HTML', 'CSS'],
-//     isTeacher: true
-// };
-//
-// const Person={
-//     ...name,
-//     ...role
-//
-// }
-// console.log(Person)
+}
+
+
+
+const message = `Hi, I am ${person.name}.`
+const city = `${message} I live in ${person.city}`
+// console.log(message)
+// console.log(city)
+
+person.nickName = 'duke';
+
+// for (let prop in person){
+//     console.log(`${prop}: ${person[prop]}`)}
+
+const prop = Object.keys(person)
+console.log(prop)
+const value = Object.values(person)
+console.log(`${prop}: ${value}`)
+//---------------------------------------------------------------
+const name = {
+    firstName: 'Reggie',
+    lastName: 'Williams',
+};
+
+const role = {
+    title: 'Software developer',
+    skills: ['JavaScript', 'HTML', 'CSS'],
+    isTeacher: true
+};
+
+const Person={
+    ...name,
+    ...role
+
+}
+console.log(Person)
+
+ */
 //=======================================================================
 /*
 const questions = [

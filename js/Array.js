@@ -169,4 +169,6 @@ document.querySelector("main").innerHTML= `${html}
 
 
 
-
+const data = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+const  cities = data.split(',')
+console.log(cities)

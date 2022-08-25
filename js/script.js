@@ -303,30 +303,56 @@ console.log(getRandomNumber(10,20));
  */
 //=============================================================================================
 
-function getRandomNumber(x){
-    return Math.floor(Math.random()*x +1);
-}
+// function getRandomNumber(x){
+//     return Math.floor(Math.random()*x +1);
+// }
+//
+// const randomNumber = getRandomNumber(10);
+// let attempts = 0;
+// let guess
+//
+//     do {
+//         guess = prompt(`Please guess a number between 1 and 10`);
+//         attempts++
+//         if (+guess === randomNumber){
+//            alert(`it takes you ${attempts} tries to guess the number ${randomNumber}` )
+//             break
+//        }else (alert(`You did not guess the right number, It was ${randomNumber}`))
+//
+//     }while ( attempts <10)
+//
+// alert(`You guessed the right number after ${attempts} attempts, It was ${guess}`)
+//
 
-const randomNumber = getRandomNumber(10);
-let attempts = 0;
-let guess
+//====================================================================
+//
+// function removeDuplicate (str){
+//  const arr = str.split(" ");
+//  const set = new Set (arr)
+//     return [...set].join(" ");
+//
+// }
+//
+// let x = 'nasr is is engineer'
+// let y=removeDuplicate(x)
+// console.log(y)
+//
+//
+//
+//
 
-    do {
-        guess = prompt(`Please guess a number between 1 and 10`);
-        attempts++
-        if (+guess === randomNumber){
-           alert(`it takes you ${attempts} tries to guess the number ${randomNumber}` )
-            break
-       }else (alert(`You did not guess the right number, It was ${randomNumber}`))
+//==================================\\
 
-    }while ( attempts <10)
-
-alert(`You guessed the right number after ${attempts} attempts, It was ${guess}`)
-
-
+// let car = new Vehicle("Honda", "white", "2010", "UK");
+// console.log(car);
+//
+// function Vehicle(model, color, year, country) {
+//     this.model = model;
+//     this.color = color;
+//     this.year = year;
+//     this.country = country;
+//}
 
 
-
-
-
-
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
